@@ -11,9 +11,6 @@ export default defineConfig({
         tailwindcss(),
     ],
     server: {
-        hmr: {
-            protocol: "wss", // Gunakan WebSocket Secure
-        },
-        host: "0.0.0.0",
+        https: true,
     },
 });
